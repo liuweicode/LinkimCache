@@ -10,6 +10,9 @@
 		84E3EF4B4E4A53AAE2C78D56 /* Pods_LinkimCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7E2FA29774F0FDEFA5FF06 /* Pods_LinkimCache.framework */; };
 		FE3703401E0CF4E500AB5EE7 /* UIImage+Linkim.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37033F1E0CF4E500AB5EE7 /* UIImage+Linkim.swift */; };
 		FE3703421E0D100500AB5EE7 /* LinkimCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3703411E0D100500AB5EE7 /* LinkimCache.swift */; };
+		FE3703441E0D2C9500AB5EE7 /* LinkimCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3703431E0D2C9500AB5EE7 /* LinkimCacheManager.swift */; };
+		FE3703461E0D3A7100AB5EE7 /* LImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3703451E0D3A7100AB5EE7 /* LImageCache.swift */; };
+		FE3703481E0D3B1F00AB5EE7 /* LUserDefaultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3703471E0D3B1F00AB5EE7 /* LUserDefaultsCache.swift */; };
 		FE867F941E0BD8F5003B76BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE867F931E0BD8F5003B76BF /* AppDelegate.swift */; };
 		FE867F961E0BD8F5003B76BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE867F951E0BD8F5003B76BF /* ViewController.swift */; };
 		FE867F9B1E0BD8F5003B76BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE867F9A1E0BD8F5003B76BF /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 		CD7E2FA29774F0FDEFA5FF06 /* Pods_LinkimCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkimCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE37033F1E0CF4E500AB5EE7 /* UIImage+Linkim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Linkim.swift"; sourceTree = "<group>"; };
 		FE3703411E0D100500AB5EE7 /* LinkimCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkimCache.swift; sourceTree = "<group>"; };
+		FE3703431E0D2C9500AB5EE7 /* LinkimCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkimCacheManager.swift; sourceTree = "<group>"; };
+		FE3703451E0D3A7100AB5EE7 /* LImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LImageCache.swift; sourceTree = "<group>"; };
+		FE3703471E0D3B1F00AB5EE7 /* LUserDefaultsCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUserDefaultsCache.swift; sourceTree = "<group>"; };
 		FE867F901E0BD8F5003B76BF /* LinkimCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkimCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE867F931E0BD8F5003B76BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE867F951E0BD8F5003B76BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +70,9 @@
 			children = (
 				FE37033F1E0CF4E500AB5EE7 /* UIImage+Linkim.swift */,
 				FE3703411E0D100500AB5EE7 /* LinkimCache.swift */,
+				FE3703431E0D2C9500AB5EE7 /* LinkimCacheManager.swift */,
+				FE3703451E0D3A7100AB5EE7 /* LImageCache.swift */,
+				FE3703471E0D3B1F00AB5EE7 /* LUserDefaultsCache.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -223,9 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3703421E0D100500AB5EE7 /* LinkimCache.swift in Sources */,
+				FE3703461E0D3A7100AB5EE7 /* LImageCache.swift in Sources */,
 				FE867F961E0BD8F5003B76BF /* ViewController.swift in Sources */,
 				FE3703401E0CF4E500AB5EE7 /* UIImage+Linkim.swift in Sources */,
+				FE3703441E0D2C9500AB5EE7 /* LinkimCacheManager.swift in Sources */,
 				FE867F941E0BD8F5003B76BF /* AppDelegate.swift in Sources */,
+				FE3703481E0D3B1F00AB5EE7 /* LUserDefaultsCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
