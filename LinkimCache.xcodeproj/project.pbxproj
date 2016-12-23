@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		84E3EF4B4E4A53AAE2C78D56 /* Pods_LinkimCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7E2FA29774F0FDEFA5FF06 /* Pods_LinkimCache.framework */; };
+		FE3703401E0CF4E500AB5EE7 /* UIImage+Linkim.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37033F1E0CF4E500AB5EE7 /* UIImage+Linkim.swift */; };
+		FE3703421E0D100500AB5EE7 /* LinkimCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3703411E0D100500AB5EE7 /* LinkimCache.swift */; };
 		FE867F941E0BD8F5003B76BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE867F931E0BD8F5003B76BF /* AppDelegate.swift */; };
 		FE867F961E0BD8F5003B76BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE867F951E0BD8F5003B76BF /* ViewController.swift */; };
-		FE867F991E0BD8F5003B76BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE867F971E0BD8F5003B76BF /* Main.storyboard */; };
 		FE867F9B1E0BD8F5003B76BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE867F9A1E0BD8F5003B76BF /* Assets.xcassets */; };
 		FE867F9E1E0BD8F5003B76BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE867F9C1E0BD8F5003B76BF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,10 +20,11 @@
 		431ADCCC7482A7F3E797C740 /* Pods-LinkimCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkimCache.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkimCache/Pods-LinkimCache.debug.xcconfig"; sourceTree = "<group>"; };
 		57F325B364CD3E1C1B4AD7AF /* Pods-LinkimCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkimCache.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkimCache/Pods-LinkimCache.release.xcconfig"; sourceTree = "<group>"; };
 		CD7E2FA29774F0FDEFA5FF06 /* Pods_LinkimCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkimCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE37033F1E0CF4E500AB5EE7 /* UIImage+Linkim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Linkim.swift"; sourceTree = "<group>"; };
+		FE3703411E0D100500AB5EE7 /* LinkimCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkimCache.swift; sourceTree = "<group>"; };
 		FE867F901E0BD8F5003B76BF /* LinkimCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkimCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE867F931E0BD8F5003B76BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE867F951E0BD8F5003B76BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE867F981E0BD8F5003B76BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE867F9A1E0BD8F5003B76BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE867F9D1E0BD8F5003B76BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE867F9F1E0BD8F5003B76BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +59,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FE37033E1E0CF07500AB5EE7 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				FE37033F1E0CF4E500AB5EE7 /* UIImage+Linkim.swift */,
+				FE3703411E0D100500AB5EE7 /* LinkimCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		FE867F871E0BD8F5003B76BF = {
 			isa = PBXGroup;
 			children = (
+				FE37033E1E0CF07500AB5EE7 /* Cache */,
 				FE867F921E0BD8F5003B76BF /* LinkimCache */,
 				FE867F911E0BD8F5003B76BF /* Products */,
 				B8284A159C134520C7EADD08 /* Pods */,
@@ -80,7 +92,6 @@
 			children = (
 				FE867F931E0BD8F5003B76BF /* AppDelegate.swift */,
 				FE867F951E0BD8F5003B76BF /* ViewController.swift */,
-				FE867F971E0BD8F5003B76BF /* Main.storyboard */,
 				FE867F9A1E0BD8F5003B76BF /* Assets.xcassets */,
 				FE867F9C1E0BD8F5003B76BF /* LaunchScreen.storyboard */,
 				FE867F9F1E0BD8F5003B76BF /* Info.plist */,
@@ -153,7 +164,6 @@
 			files = (
 				FE867F9E1E0BD8F5003B76BF /* LaunchScreen.storyboard in Resources */,
 				FE867F9B1E0BD8F5003B76BF /* Assets.xcassets in Resources */,
-				FE867F991E0BD8F5003B76BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3703421E0D100500AB5EE7 /* LinkimCache.swift in Sources */,
 				FE867F961E0BD8F5003B76BF /* ViewController.swift in Sources */,
+				FE3703401E0CF4E500AB5EE7 /* UIImage+Linkim.swift in Sources */,
 				FE867F941E0BD8F5003B76BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,14 +232,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FE867F971E0BD8F5003B76BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE867F981E0BD8F5003B76BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FE867F9C1E0BD8F5003B76BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
