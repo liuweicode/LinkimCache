@@ -12,27 +12,32 @@ let kUserDefaultDataKey = "kUserDefaultDataKey"
 
 class UserDefaultsData
 {
-    fileprivate static var unitedDict: [AnyHashable: Any]?
+    private static var _unitedDict: [AnyHashable: Any]?
     
-    class func currentTokenDict() -> [AnyHashable: Any]
+    class var currentTokenDict: [AnyHashable: Any]
     {
-        objc_sync_enter(self)
-        if  unitedDict == nil {
-            unitedDict = [AnyHashable: Any]()
-            if let dict = UserDefaults.standard.object(forKey: kUserDefaultDataKey) as? [AnyHashable: Any]
-            {
-                _ = dict.map{
-                    unitedDict![$0.0] = $0.1
+        get {
+            objc_sync_enter(self)
+            if  _unitedDict == nil {
+                _unitedDict = [AnyHashable: Any]()
+                if let dict = UserDefaults.standard.object(forKey: kUserDefaultDataKey) as? [AnyHashable: Any]
+                {
+                    _ = dict.map{
+                        _unitedDict![$0.0] = $0.1
+                    }
                 }
             }
+            objc_sync_exit(self)
+            return _unitedDict!
         }
-        objc_sync_exit(self)
-        return unitedDict!
+        set{
+            _unitedDict = newValue
+        }
     }
     
     fileprivate class func saveAllData()
     {
-        guard let myUnitedDict = unitedDict else {
+        guard let myUnitedDict = _unitedDict else {
             return
         }
         
@@ -46,10 +51,44 @@ class UserDefaultsData
     
     class func clearAllData()
     {
-        guard let _ = unitedDict else {
+        guard let _ = _unitedDict else {
             return
         }
-        unitedDict!.removeAll()
+        _unitedDict!.removeAll()
         UserDefaultsData.saveAllData()
     }
+}
+
+extension UserDefaultsData
+{
+    class func userLoginPhone() -> String?
+    {
+        if let phone = UserDefaultsData.currentTokenDict["user_login_phone"] as? String
+        {
+            return phone
+        }
+        return nil
+    }
+
+    class func setUserLoginPhone(_ phone: String)
+    {
+        UserDefaultsData.currentTokenDict["user_login_phone"] = phone
+        UserDefaultsData.saveAllData()
+    }
+    
+    class func token() -> String?
+    {
+        if let token = UserDefaultsData.currentTokenDict["token"] as? String
+        {
+            return token
+        }
+        return nil
+    }
+    
+    class func setToken(_ token: String)
+    {
+        UserDefaultsData.currentTokenDict["token"] = token
+        UserDefaultsData.saveAllData()
+    }
+
 }

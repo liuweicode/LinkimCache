@@ -30,18 +30,28 @@ class ViewController: UIViewController {
         
         print("\(documentPath)")
         
+        // Image cache test
         view.addSubview(imageView)
-        
         imageView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
         }
-        
-        //imageView.kf.setImage(with: ImageResource(downloadURL: URL(string: "http://img06.tooopen.com/images/20161112/tooopen_sy_185726882764.jpg")!))
         imageView.lm.setImageWithURL(with: "http://img06.tooopen.com/images/20161112/tooopen_sy_185726882764.jpg")
         
+        // key-value store test
+        UserDefaultsData.setUserLoginPhone("1234567890")
         
         
+        UserDefaultsData.setToken("ttttttoken")
         
+        let dict = UserDefaultsData.currentTokenDict
+        
+        print("\(dict)")
+        
+        UserDefaultsData.clearAllData()
+        
+        let dict2 = UserDefaultsData.currentTokenDict
+        
+        print("\(dict2)")
     }
     
    
