@@ -17,6 +17,7 @@
 		FE867F961E0BD8F5003B76BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE867F951E0BD8F5003B76BF /* ViewController.swift */; };
 		FE867F9B1E0BD8F5003B76BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE867F9A1E0BD8F5003B76BF /* Assets.xcassets */; };
 		FE867F9E1E0BD8F5003B76BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE867F9C1E0BD8F5003B76BF /* LaunchScreen.storyboard */; };
+		FEC4AACD1E10C4FB0013A06E /* LButtonCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC4AACC1E10C4FB0013A06E /* LButtonCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FE867F9A1E0BD8F5003B76BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE867F9D1E0BD8F5003B76BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE867F9F1E0BD8F5003B76BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC4AACC1E10C4FB0013A06E /* LButtonCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LButtonCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		FE37033E1E0CF07500AB5EE7 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				FEC4AACC1E10C4FB0013A06E /* LButtonCache.swift */,
 				FE37033F1E0CF4E500AB5EE7 /* UIImage+Linkim.swift */,
 				FE3703411E0D100500AB5EE7 /* LinkimCache.swift */,
 				FE3703431E0D2C9500AB5EE7 /* LinkimCacheManager.swift */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3703421E0D100500AB5EE7 /* LinkimCache.swift in Sources */,
+				FEC4AACD1E10C4FB0013A06E /* LButtonCache.swift in Sources */,
 				FE3703461E0D3A7100AB5EE7 /* LImageCache.swift in Sources */,
 				FE867F961E0BD8F5003B76BF /* ViewController.swift in Sources */,
 				FE3703401E0CF4E500AB5EE7 /* UIImage+Linkim.swift in Sources */,
